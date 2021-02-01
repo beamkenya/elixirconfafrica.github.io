@@ -10,6 +10,12 @@
   $ npm start
 ```
 
+### build project for production
+ - this will compile your project essentials to one directory (dist) that you can copy to you production server
+```shell
+  $ npm run build
+```
+
 ### ignore unecesary files for versioning
  - in case there are additional files that don't need to be versioned by git, add them to the .gitignore file
 
