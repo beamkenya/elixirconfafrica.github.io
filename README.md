@@ -5,9 +5,9 @@
 ```
 
 ### start server locally
- - this will enable you view the project interface on port 1234, ensure no other server is runnig on that port
+ - this will enable you view the project interface on port 1234, ensure no other server is running on that port
 ```shell
-  $ npm start
+  $ npm run dev
 ```
 
 ### build project for production
