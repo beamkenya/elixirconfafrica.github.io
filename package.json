@@ -1,11 +1,11 @@
 {
   "name": "elixirconfafrica",
   "version": "1.0.0",
-  "description": "",
+  "description": "Elixir Conference in Africa",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.html",
+    "dev": "parcel index.html --no-hmr",
     "start": "node server.js",
     "build": "parcel build --public-url . index.html"
   },
@@ -24,13 +24,31 @@
     "express": "^4.17.1",
     "jquery": "^3.5.1",
     "ol": "^6.5.0",
+    "parcel-plugin-pwa-manifest": "^3.0.10",
     "popper.js": "^1.16.1",
     "serve-static": "^1.14.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.3"
   },
   "engines": {
     "node": "12.x"
+  },
+  "pwaManifest": {
+    "name": "Elixir Conf Africa",
+    "shortName": "Elixir Conference in Africa",
+    "startURL": "./index.html",
+    "display": "standalone",
+    "backgroundColor": "#AD3989",
+    "themeColor": "#fff",
+    "generateIconOptions": {
+      "baseIcon": "assets/images/Square-elixir-logo.png",
+      "sizes": [
+        192,
+        384,
+        512
+      ],
+      "genFavicons": false
+    }
   }
 }
