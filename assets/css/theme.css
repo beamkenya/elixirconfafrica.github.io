@@ -4366,6 +4366,12 @@ input.btn-block[type="button"] {
     align-items: center
 }
 
+@media only screen and (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #ad3989;
+    }
+}
+
 .navbar-toggler {
     padding: .25rem .75rem;
     font-size: 1.25rem;
@@ -10243,6 +10249,11 @@ cour.btn-secondary:hover,
     width: auto
 }
 
+.header .logo-icon-sm {
+    height: 65px;
+    width: auto
+}
+
 .header-shrink {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
     background: #ad3989
@@ -10322,15 +10333,15 @@ cour.btn-secondary:hover,
 }
 
 .hero-carousel .carousel-item-1 {
-    background: url("../images/hero-1.jpg") no-repeat center center
+    background: url("../images/hero-1.png") no-repeat center
 }
 
 .hero-carousel .carousel-item-2 {
-    background: url("../images/hero-2.jpg") no-repeat center center
+    background: url("../images/hero-1.png") no-repeat center center
 }
 
 .hero-carousel .carousel-item-3 {
-    background: url("../images/hero-3.jpg") no-repeat center center
+    background: url("../images/hero-1.png") no-repeat center center
 }
 
 .hero-text-block {
@@ -10426,6 +10437,16 @@ cour.btn-secondary:hover,
     background: #f0f6fa;
     margin-bottom: 2rem;
     height: 100%
+}
+
+.speaker-img {
+    height: 180px;
+}
+
+.speaker-img img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .speakers-section .card-title {
