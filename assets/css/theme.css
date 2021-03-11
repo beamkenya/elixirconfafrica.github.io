@@ -10333,11 +10333,9 @@ cour.btn-secondary:hover,
 }
 
 .hero-carousel .carousel-item-1 {
-    background: url("../images/hero-1.png") no-repeat center
-}
-
-.hero-carousel .carousel-item-2 {
-    background: url("../images/hero-1.png") no-repeat center center
+    background: url("../images/1.jpg");
+    background-repeat: no-repeat;
+    background-size:  1224px 816px;
 }
 
 .hero-carousel .carousel-item-3 {
