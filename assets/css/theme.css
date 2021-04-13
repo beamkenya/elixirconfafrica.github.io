@@ -444,6 +444,9 @@ h6,
     line-height: 1.2
 }
 
+.desc {
+    font-size: 14px!important;
+}
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
