@@ -6,6 +6,7 @@ on:
 
 jobs:
   build-and-deploy:
+#    if: ${{ github.event.release.target_commitish == 'refs/heads/main' }}
     runs-on: ubuntu-latest
 
     strategy:
@@ -14,6 +15,8 @@ jobs:
 
 
     steps:
+      - run: echo "Branch is ${{ github.event.release.target_commitish }}"
+      - run: echo "Branch 3 is ${{ github.ref }}"
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
       - name: Use Node.js ${{ matrix.node-version }}
