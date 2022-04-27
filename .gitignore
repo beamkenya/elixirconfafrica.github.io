@@ -3,3 +3,5 @@ dist/
 package-lock.json
 /.idea
 .cache
+.DS_store
+assets/.DS_store
